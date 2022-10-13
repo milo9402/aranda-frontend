@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2022",
     "lib": [
       "dom",
       "dom.iterable",
@@ -22,5 +22,27 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "baseUrl": ".",
+  "paths": {
+    "@/components/*": ["components/*"],
+    "@/assets/*": [
+      "assets/*"
+    ],
+    "@/styless/*": [
+      "styless/*"
+    ],
+    "@/store/*": [
+      "store/*"
+    ],
+    "@/utils/*": [
+      "utils/*"
+    ],
+    "@/hooks/*": [
+      "hooks/*"
+    ],
+    "@/api/*": [
+      "api/*"
+    ]
+  }
 }
