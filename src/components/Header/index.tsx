@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Header() {
+export default function Header({children}:any) {
   return (
-    <div>Header</div>
+    <div className='header_container'>
+      {children}
+    </div>
   )
 }
