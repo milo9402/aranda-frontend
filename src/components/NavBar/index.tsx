@@ -2,16 +2,16 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <div>
+    <>
       <ul className='navbar_container'>
-        <li>Home</li>
-        <li>Vegetarianos</li>
-        <li>Platos principales</li>
-        <li>Tortas</li>
-        <li>Comida Rapida</li>
-        <li>Menu Niños</li>
-        <li>Sopas</li>
+        <li className="navbar_item">Home</li>
+        <li className="navbar_item">Vegetarianos</li>
+        <li className="navbar_item">Platos principales</li>
+        <li className="navbar_item">Tortas</li>
+        <li className="navbar_item">Comida Rapida</li>
+        <li className="navbar_item">Menu Niños</li>
+        <li className="navbar_item">Sopas</li>
       </ul>
-    </div>
+    </>
   )
 }

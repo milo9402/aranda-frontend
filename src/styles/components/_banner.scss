@@ -1,8 +1,9 @@
 .banner_container{
     width: 100%;
-    .banner_container_image {
-        width: 100%;
-        height: 416px;
+    contain: content;
+    height: 416px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../assets/bcq.jpg');
 
-    }
 }

@@ -2,4 +2,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    height: 69px;
+    .header_title{
+        top: 14px;
+        left: 70px;
+        width: 152px;
+        height: 40px;
+        color: $secondary;
+        text-align: left;
+        font: normal normal normal 40px/48px Monster Clubhouse;
+        letter-spacing: 1.15px;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+
 }

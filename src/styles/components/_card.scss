@@ -17,11 +17,16 @@
         width: 164px;
         height: 158px;
     }
-
     .card_icons{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .card_puntuation{
+        display: inline-flex;
+        align-items: center;
     }
   
 }

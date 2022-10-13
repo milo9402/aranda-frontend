@@ -1,12 +1,12 @@
 .footer_container {
     background: $footer_background;
-    height: 116px;
+    height: 167px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     .footer_image{
-        width: 379px;
-        height: 175px;
+        width: 536px;
+        height: 248px;
     }
 }

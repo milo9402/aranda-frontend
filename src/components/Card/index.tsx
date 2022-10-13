@@ -9,7 +9,7 @@ export default function Card() {
         <img className='card_image' src={CardImage} alt="card_image" />
         <CardBody/>
         <div className='card_icons'>
-            <span>
+            <span className='card_puntuation'>
                 <Icon/>
                 <p>5.0</p>
             </span>
