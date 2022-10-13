@@ -3,7 +3,7 @@ import React from 'react'
 export default function Navbar() {
   return (
     <div>
-      <ul>
+      <ul className='navbar_container'>
         <li>Home</li>
         <li>Vegetarianos</li>
         <li>Platos principales</li>

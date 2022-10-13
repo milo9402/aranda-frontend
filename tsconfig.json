@@ -22,7 +22,7 @@
   },
   "include": [
     "src"
-  ],
+, "App.test.tsx"  ],
   "baseUrl": ".",
   "paths": {
     "@/components/*": ["components/*"],

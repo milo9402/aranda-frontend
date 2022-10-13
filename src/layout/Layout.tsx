@@ -1,16 +1,21 @@
 import React from 'react'
+import Banner from '../components/Banner'
+import Carrousel from '../components/Carrousel'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Navbar from '../components/NavBar'
 
 export default function Layout() {
   return (
-    <div>
-        Este es mi Layout
+    <>
         <Header>
           <Navbar/>
         </Header>
-        <Footer></Footer>
-    </div>
+        <Banner/>
+        <main>
+          <Carrousel/>
+        </main>
+        <Footer/>
+    </>
   )
 }
