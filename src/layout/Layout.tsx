@@ -13,6 +13,7 @@ export default function Layout() {
         </Header>
         <Banner/>
         <main>
+          <p>Nuevas Recetas</p>
           <Carrousel/>
         </main>
         <Footer/>

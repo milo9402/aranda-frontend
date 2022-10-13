@@ -1,4 +1,12 @@
 .footer_container {
-    background-color: tomato;
-    height: 167px;
+    background: $footer_background;
+    height: 116px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .footer_image{
+        width: 379px;
+        height: 175px;
+    }
 }
