@@ -34,23 +34,10 @@
         position: relative;
         top: -25px;
     }
-    .card_body .card_body_info{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        gap: 5px;
-        .card_body_description{
-            color: $primary;
-            font: normal normal normal 17px/20px Monster Clubhouse;
-            letter-spacing: 0px;
-        }
-        .card_body_value{
-            color: $secondary;
-            font: normal normal normal 15px/20px Poppins;
-        }
+    .card_body{
+        display: none;
     }
+
     .card_icons{
         display: flex;
         flex-direction: row;
@@ -75,5 +62,25 @@
             padding-right: 5%;
         }
     }
-  
+  &.open {
+    .card_body, .card_body_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        transition: height 0.2s;
+        .card_body_description{
+            color: $primary;
+            font: normal normal normal 17px/20px Monster Clubhouse;
+            letter-spacing: 0px;
+        }
+        .card_body_value{
+            color: $secondary;
+            font: normal normal normal 15px/20px Poppins;
+        }
+
+    }
+  }
 }
