@@ -1,32 +1,41 @@
 .card_container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-bottom: 5%;
     top: 288px;
     left: 508px;
     width: 266px;
     height: 270px;
     background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
-    box-shadow: 0px 5px 9px #8395A766;
-    border-radius: 10px;
+    box-shadow: 10px 10px 20px -5px #cccccc;
+    border-radius: 15px;
     opacity: 1;
 
     .card_image{
         width: 164px;
         height: 158px;
+        position: relative;
+        top: -25px;
     }
     .card_icons{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
-    }
-    .card_puntuation{
-        display: inline-flex;
-        align-items: center;
+        font: normal normal normal 26px/39px Poppins;
+        .card_puntuation{
+            display: inline-flex;
+            align-items: center;
+            .card_puntuation_text{
+                font: normal normal normal 26px/39px Poppins;
+                color: $secondary
+            }
+        }
+        .card_favorite{
+            padding-right: 5%;
+        }
     }
   
 }

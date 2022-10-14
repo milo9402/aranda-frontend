@@ -1,0 +1,16 @@
+.layout_container {
+    .layout_mid_title{
+        padding-left: 70px;
+        font: normal normal normal 67px/91px Monster Clubhouse;
+        text-align: left;
+        letter-spacing: 0px;
+        color: $primary;
+        opacity: 1;
+        margin: 2% 0% 5% 0;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10% 5% 10%;
+    }
+}

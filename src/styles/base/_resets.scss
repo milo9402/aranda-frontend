@@ -1,17 +1,16 @@
 // @include font ('../../assets/fonts/Monster\ Clubhouse.ttf');
-
+@font-face {
+  font-family: 'Monster Clubhouse',;
+  src: url('../../assets/fonts/Monster\ Clubhouse.ttf');
+}
+@font-face {
+  font-family: 'Poppins',;
+  src: url('../../assets/fonts/Poppins-Regular.ttf');
+}
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Poppins','Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','Clubhouse',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: 'Poppins', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: 'Poppins', 'Monster Clubhouse',source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
+
   }
-  

@@ -8,5 +8,16 @@
     .footer_image{
         width: 536px;
         height: 248px;
+        position: relative;
+        top: -20px;
+    }
+    .footer_text{
+        text-align: left;
+        letter-spacing: 0px;
+        color: #425966;
+        left: 166px;
+        font: normal normal normal 56px/76px Monster Clubhouse;
+        top: 52.3px;
+        
     }
 }

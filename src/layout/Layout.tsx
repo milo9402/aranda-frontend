@@ -7,16 +7,16 @@ import Navbar from '../components/NavBar'
 
 export default function Layout() {
   return (
-    <>
+    <div className='layout_container'>
         <Header>
           <Navbar/>
         </Header>
         <Banner/>
         <main>
-          <p>Nuevas Recetas</p>
+          <div className='layout_mid_title'>Nuevas Recetas</div>
           <Carrousel/>
         </main>
         <Footer/>
-    </>
+    </div>
   )
 }
