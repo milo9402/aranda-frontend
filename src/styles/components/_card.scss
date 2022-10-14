@@ -23,14 +23,19 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 100%;        
         font: normal normal normal 26px/39px Poppins;
         .card_puntuation{
             display: inline-flex;
             align-items: center;
+            margin-left: 2%;
+            width: 30%;
+            justify-content: space-around;
             .card_puntuation_text{
                 font: normal normal normal 26px/39px Poppins;
-                color: $secondary
+                color: $secondary;
+            margin-left: 2%;
+
             }
         }
         .card_favorite{
