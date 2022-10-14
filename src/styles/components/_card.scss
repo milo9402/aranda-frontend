@@ -6,17 +6,50 @@
     top: 288px;
     left: 508px;
     width: 266px;
-    height: 270px;
     background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
     box-shadow: 10px 10px 20px -5px #cccccc;
     border-radius: 15px;
     opacity: 1;
+
+    .card_title{
+        color: $primary;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap:5px;
+        .card_food{
+            font: normal normal normal 30px/40px Poppins;
+            letter-spacing: -0.6px;
+        }
+        .card_ingredient{
+            font: normal normal normal 30px/40px Monster Clubhouse;
+        }
+    }
 
     .card_image{
         width: 164px;
         height: 158px;
         position: relative;
         top: -25px;
+    }
+    .card_body .card_body_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        .card_body_description{
+            color: $primary;
+            font: normal normal normal 17px/20px Monster Clubhouse;
+            letter-spacing: 0px;
+        }
+        .card_body_value{
+            color: $secondary;
+            font: normal normal normal 15px/20px Poppins;
+        }
     }
     .card_icons{
         display: flex;

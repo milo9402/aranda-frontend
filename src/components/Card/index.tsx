@@ -9,6 +9,10 @@ export default function Card() {
   return (
     <div className='card_container'>
         <img className='card_image' src={CardImage} alt="card_image" />
+        <span className='card_title'>
+            <div className="card_food">Ojingeo</div>
+            <div className="card_ingredient">Muchim</div>
+        </span>
         <CardBody/>
         <div className='card_icons'>
             <span className='card_puntuation'>
