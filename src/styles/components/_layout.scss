@@ -18,13 +18,23 @@
 
 
     @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
-
+        
+        .layout_mid_title {
+            padding-left: 50px;
+            font: normal normal normal 54px/65px Monster Clubhouse;
+        }
+        main {
+            height: auto;
+        }
     }
     @media screen and (max-width: $breakpoint-mobile) {
         .layout_mid_title {
             padding-left: 0;
             text-align: center;
             font: normal normal normal 54px/65px Monster Clubhouse;
+        }
+        main {
+            height: auto;
         }
     }
 }
