@@ -35,7 +35,30 @@
         top: -25px;
     }
     .card_body{
-        display: none;
+        height: 0px;
+        overflow: hidden;
+        transition: height ease 0.3s;
+        .card_body, .card_body_info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            gap: 5px;
+    
+            .card_body_description{
+                color: $primary;
+                font: normal normal normal 17px/20px Monster Clubhouse;
+                letter-spacing: 0px;
+    
+            }
+            .card_body_value{
+                color: $secondary;
+                font: normal normal normal 15px/20px Poppins;
+                margin-bottom: 10px;
+            }
+    
+        }
     }
 
     .card_icons{
@@ -63,25 +86,8 @@
         }
     }
   &.open {
-    .card_body, .card_body_info{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        gap: 5px;
-        transition: height 0.2s;
-        .card_body_description{
-            color: $primary;
-            font: normal normal normal 17px/20px Monster Clubhouse;
-            letter-spacing: 0px;
-        }
-        .card_body_value{
-            color: $secondary;
-            font: normal normal normal 15px/20px Poppins;
-            margin-bottom: 10px;
-        }
-
+    .card_body{
+        height: 286px;
     }
   }
 }
