@@ -31,5 +31,28 @@
 
         }
     }
+    @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+        height: 249px;
+        .banner_text{
+            .banner_title{
+                font: normal normal normal 74px/111px Poppins;
+            }
+            .banner_subtitle{
+                font: normal normal normal 67px/80px Monster Clubhouse;
+            }
+        }
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+        height: 234px;
+        .banner_text{
+            .banner_title{
+                font: normal normal normal 51px/77px Poppins;
+                height: 50px;
+            }
+            .banner_subtitle{
+                font: normal normal normal 51px/61px Monster Clubhouse;
+            }
+        }
+    }
 
 }

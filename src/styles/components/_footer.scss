@@ -6,7 +6,7 @@
     justify-content: space-evenly;
     align-items: center;
     .footer_image{
-        width: 536px;
+        width: 30%;
         height: 248px;
         position: relative;
         top: -20px;
@@ -19,5 +19,25 @@
         font: normal normal normal 56px/76px Monster Clubhouse;
         top: 52.3px;
         
+    }
+    @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+        height: 115px;
+        .footer_image{
+            height: 175px;
+        }
+        .footer_text{
+            font-size: 39px;
+        }
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+        height: 70px;
+        .footer_image{
+            height: 106px;
+            width: 149px;
+        }
+        .footer_text{
+            width: 155px;
+            font: normal normal normal 23px/28px Monster Clubhouse;
+        }
     }
 }

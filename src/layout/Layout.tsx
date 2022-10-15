@@ -14,7 +14,7 @@ export default function Layout() {
         <Banner/>
         <main>
           <div className='layout_mid_title'>Nuevas Recetas</div>
-          <Carrousel/>
+          {/* <Carrousel/>s */}
         </main>
         <Footer/>
     </div>

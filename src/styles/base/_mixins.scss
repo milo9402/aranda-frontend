@@ -1,0 +1,13 @@
+// Mobile
+@mixin mobile-mixin($medida:$breakpoint-mobile) {
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+// Tablet
+@mixin tablet-mixin($min-medida:$breakpoint-mobile, $max-medida:$breakpoint-tablet) {
+    @media screen and (min-width: $min-medida) and (max-width: $max-medida) {
+        @content;
+    }
+}

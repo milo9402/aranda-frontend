@@ -15,4 +15,16 @@
         height: 640px;
         max-height: 640px;
     }
+
+
+    @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+        .layout_mid_title {
+            padding-left: 0;
+            text-align: center;
+            font: normal normal normal 54px/65px Monster Clubhouse;
+        }
+    }
 }
