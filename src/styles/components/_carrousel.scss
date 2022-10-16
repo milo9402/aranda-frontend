@@ -1,17 +1,3 @@
-// .carrousel_container {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: flex-start;
-//     gap: 1%;
-//     margin-bottom: 5%;
-// overflow-x: auto; // esto se debe de eliminar cuando se solucione el tema del carrusel
-// }
-
-// .carrousel_container{
-//     background-color: red;
-// }
-
 .carrousel_container {
     display: grid;
     grid-auto-flow: column;
