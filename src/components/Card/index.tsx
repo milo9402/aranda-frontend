@@ -5,7 +5,7 @@ import {ReactComponent as StarIcon}  from '../../assets/icons/ic_star.svg'
 import {ReactComponent as HeartIcon}  from '../../assets/icons/ic-favorite.svg'
 
 
-export default function Card() {
+export default function Card(props:any) {
   const [isShown, setIsShown] = useState(false);
 
 
@@ -15,13 +15,15 @@ export default function Card() {
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
     >
-      <img className='card_image' src={CardImage} alt="card_image" />
+      <span>
+        <img className='card_image' src={CardImage} alt="card_image" />
+      </span>
       
       {!isShown && (
         <span 
           className='card_title'
         >
-            <div className="card_food">Ojingeo</div>
+            <div className="card_food">{props.name || 'comida'}</div>
             <div className="card_ingredient">Muchim</div>
         </span>
       )}

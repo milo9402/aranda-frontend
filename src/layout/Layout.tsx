@@ -16,7 +16,9 @@ export default function Layout() {
         <CategoryGrid/>
         <main>
           <div className='layout_mid_title'>Nuevas Recetas</div>
-          {/* <Carrousel/> */}
+          <div className='layout-carrousel-contain'>
+            <Carrousel/>
+          </div>
         </main>
         <Footer/>
     </div>

@@ -11,7 +11,7 @@
     main{
         display: flex;
         flex-direction: column;
-        margin: 0 10% 5% 10%;
+        margin: 0 8% 5% 8%;
         height: 640px;
         max-height: 640px;
     }
@@ -35,6 +35,8 @@
         }
         main {
             height: auto;
+            margin: 0 8% 10% 8%;
+
         }
     }
 }

@@ -9,7 +9,8 @@
     background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
     box-shadow: 10px 10px 20px -5px #cccccc;
     border-radius: 15px;
-    opacity: 1;
+    height:fit-content;
+    scroll-snap-align: center;
 
     .card_title{
         color: $primary;
@@ -67,7 +68,6 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;        
-        font: normal normal normal 26px/39px Poppins;
         .card_puntuation{
             display: inline-flex;
             align-items: center;
@@ -77,17 +77,42 @@
             .card_puntuation_text{
                 font: normal normal normal 26px/39px Poppins;
                 color: $secondary;
-            margin-left: 2%;
-
+                margin-left: 2%;
             }
         }
         .card_favorite{
             padding-right: 5%;
         }
     }
-  &.open {
-    .card_body{
-        height: 286px;
+    &.open {
+        .card_body{
+            height: 286px;
+        }
     }
-  }
+
+    @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+        width: 180px;
+        height:182px;
+
+        .card_title{
+            .card_food, .card_ingredient{
+                    font-size:20px;
+            }
+        }
+        .card_image{
+            width: 100px;
+            height: 100px;
+        }
+        .card_icons{
+            height: 15px;
+            .card_puntuation{
+                .card_puntuation_text{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
 }
