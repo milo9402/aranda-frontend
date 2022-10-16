@@ -89,7 +89,26 @@
     }
 
     @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+        width: 266px;
+        height:269px;
 
+        .card_title{
+            .card_food, .card_ingredient{
+                font-size:30px;
+            }
+        }
+        .card_image{
+            width: 167px;
+            height: 157px;
+        }
+        .card_icons{
+            height: 36px;
+            .card_puntuation{
+                .card_puntuation_text{
+                    font-size: 26px;
+                }
+            }
+        }
     }
     @media screen and (max-width: $breakpoint-mobile) {
         width: 180px;
