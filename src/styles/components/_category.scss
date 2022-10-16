@@ -1,0 +1,18 @@
+.category-container{
+    background: $category_background;
+    box-shadow: 0px 5px 9px #8395A766;
+    border-radius: 10px;
+    width: 106px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .category-name{
+        text-align: center;
+        font-family: Poppins;
+        font-size: 13px;
+        letter-spacing: 0px;
+        color: $secondary;
+    }
+}

@@ -4,6 +4,7 @@ import Carrousel from '../components/Carrousel'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Navbar from '../components/NavBar'
+import CategoryGrid from '../components/CategoryGrid'
 
 export default function Layout() {
   return (
@@ -12,9 +13,10 @@ export default function Layout() {
           <Navbar/>
         </Header>
         <Banner/>
+        <CategoryGrid/>
         <main>
           <div className='layout_mid_title'>Nuevas Recetas</div>
-          <Carrousel/>
+          {/* <Carrousel/> */}
         </main>
         <Footer/>
     </div>
