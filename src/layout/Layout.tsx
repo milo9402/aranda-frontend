@@ -5,16 +5,8 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Navbar from '../components/NavBar'
 import CategoryGrid from '../components/CategoryGrid'
-import { useAppDispatch } from '../hooks/redux.hook'
-import { getRecipes } from '../slices/recipe/thunk'
 
 export default function Layout({children}: any) {
-
-  // const dispatch = useAppDispatch();
-  // useEffect(() => {
-  //   dispatch(getRecipes())
-  // },[dispatch])
-
 
   return (
     <div className='layout_container'>
@@ -29,7 +21,7 @@ export default function Layout({children}: any) {
             <Carrousel/>
           </div>
         </main>
-        {children}
+        {/* {children} */}
         <Footer/>
     </div>
   )

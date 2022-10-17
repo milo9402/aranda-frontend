@@ -1,13 +1,13 @@
 import React from 'react'
-import {ReactComponent as CategoryIcon}  from '../../assets/icons/ic_vegetarian.svg'
+import { CategoryProps } from '../../interfaces/category.interface'
 
-export default function Category() {
+export default function Category({name,icon,categoryName}:CategoryProps) {
   return (
     <div className='category-container'>
       <span className='category-icon'>
-        <CategoryIcon/>
+        {icon}
       </span>
-      <span className='category-name'>Vegetarianos</span>
+      <span className='category-name'>{name}</span>
     </div>
   )
 }
