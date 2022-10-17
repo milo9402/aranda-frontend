@@ -8,7 +8,8 @@ export const getRecipes:any = (data:any) => async (dispatch:any) => {
     console.log("esto es apiKey -> ", apiKey)
     try {
       const response = await spoonacularApi.get(`recipes/random?number=4&apiKey=${apiKey}`);
-      dispatch(getRandomRecipes(response.data));
+      console.log("esto es el data", response.data)
+      dispatch(getRandomRecipes(response.data.recipes));
     } catch (err:any) {
       throw new Error(err);
     }

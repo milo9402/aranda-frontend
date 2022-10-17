@@ -14,7 +14,7 @@ export default function CardBody({servings, readyInMinutes, dificult}: BodyCardP
             <RecipeSizeIcon/>
           </span>
           <span className="card_body_description">Tamaño de la preparación</span>
-          <span className="card_body_value">{servings}</span> 
+          <span className="card_body_value">{servings} Raciones</span> 
       </div>
       <div className='card_body_info'>
           <span className='card_body_icon'>

@@ -8,6 +8,7 @@
     box-shadow: 10px 10px 20px -5px #cccccc;
     border-radius: 15px;
     height:fit-content;
+    min-height: 270px;
     scroll-snap-align: center;
 
     .card_title{
@@ -17,7 +18,9 @@
         display: flex;
         justify-content: center;
         align-items: baseline;
-        gap:5px;
+        max-height: 40px;
+        overflow: hidden;
+        gap:5%;
         .card_food{
             font: normal normal normal 30px/40px Poppins;
             letter-spacing: -0.6px;
