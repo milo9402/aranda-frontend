@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import Navbar from '../components/NavBar'
 import CategoryGrid from '../components/CategoryGrid'
 
-export default function Layout() {
+export default function Layout({children}: any) {
   return (
     <div className='layout_container'>
         <Header>
@@ -20,6 +20,7 @@ export default function Layout() {
             <Carrousel/>
           </div>
         </main>
+        {children}
         <Footer/>
     </div>
   )
