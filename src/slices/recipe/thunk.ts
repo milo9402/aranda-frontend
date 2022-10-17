@@ -2,12 +2,14 @@ import { spoonacularApi } from "../../api";
 import { getRandomRecipes, RecipeState, startLoadingRecipes } from "./repiceSlice"
 
 
-export const getRecipes = () => {
-    return async (dispatch: any, getState: RecipeState) => {
-        dispatch(startLoadingRecipes());
-        // dispatch(getRandomRecipes)
-        const prueba = await spoonacularApi.get('recipes/random?number=4&apiKey=65ebb248774f4444ab70166014b80e62')
-        console.log("estas son las recentas --> ", prueba)
 
+export const getRecipes:any = (data:any) => async (dispatch:any) => {
+    const apiKey = process.env.REACT_APP_ENV_API_KEY;
+    console.log("esto es apiKey -> ", apiKey)
+    try {
+      const response = await spoonacularApi.get(`recipes/random?number=4&apiKey=${apiKey}`);
+      dispatch(getRandomRecipes(response.data));
+    } catch (err:any) {
+      throw new Error(err);
     }
-}
+  };

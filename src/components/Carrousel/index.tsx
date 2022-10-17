@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { spoonacularApi } from '../../api';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux.hook'
 import { getRandomRecipes } from '../../slices/recipe/repiceSlice';
 import { getRecipes } from '../../slices/recipe/thunk';
@@ -8,6 +9,7 @@ import Card from '../Card'
 export default function Carrousel() {
 
   const dispatch = useAppDispatch();
+
 
   // let randomRecipes = [
   //   {
@@ -2088,8 +2090,9 @@ export default function Carrousel() {
   
    useEffect(() => {
     // dispatch(getRandomRecipes())
-    getRecipes()
-  })
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+    dispatch(getRecipes())
+  },[dispatch])
   
   // const cards:any = ():any => {
   //     const cardsArray = 
