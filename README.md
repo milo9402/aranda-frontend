@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Bienvenido al respositorio prueba frontend Aranda Software  [![ArandaSoft favicon](https://arandasoft.com/wp-content/uploads/2021/03/cropped-favicon-aranda-software-2021-32x32.png)](https://arandasoft.com/wp-content/uploads/2021/03/cropped-favicon-aranda-software-2021-32x32.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Acerca de este repositorio
 
-## Available Scripts
+En este repositorio se encuentra el codigo fuente del proyecto para aspirar al cargo de desarrollador frontend para la empresa Aranda Software usando ReactJs  .
+Se genero el proyecto mediante create-react-app usando el template Typescript bajo  **Node 16  **  y SASS para los estilos.
 
-In the project directory, you can run:
+---
+#### Instalacion y uso
 
-### `npm start`
+##### Instalacion
+Para instalar el repositorio y empezar a trabajar sobre el lo uncio que debes hacer despues de clonarlo tu computador es correr el comando **`npm install` para instalar las dependencias** y por ultimo **`npm start` para iniciar el servidor**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+###### Lista de rutas
+1.  / : Para ingresar a la pagina Home
+2. /recipe-instruction : Para ingresar al detalle de una receta (en construccion)
+3. /recipes : Para ingresar al listado de recetas (en construccion)
 
-### `npm test`
+---
+#### Tecnologias usadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Libreria  | Version
+------------- | -------------
+react  | 18.2.0
+react-dom | 18.2.0
+axios | 1.1.2
+sass | 1.55.0
+typescript | 4.8.4
+@reduxjs/toolkit |  1.8.6
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

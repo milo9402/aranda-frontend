@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import { Recipe } from '../../interfaces/recipe.interface'
-// import { getRecipes } from './thunk'
 
 
 export interface RecipeState {
@@ -33,7 +32,6 @@ export const recipeSlice = createSlice({
   },
 })
 
-// Action creators are generated for each case reducer function
 export const { getRandomRecipes,getCurrentRecipe,startLoadingRecipes } = recipeSlice.actions
 
 export default recipeSlice.reducer
